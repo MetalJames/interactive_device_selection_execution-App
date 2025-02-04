@@ -21,7 +21,7 @@ export const PreviewArea = (props: Props) => {
             .find((device) => device.id === selectedId) || null;
 
     return (
-        <div className="w-2/3 p-6 bg-blue-100">
+        <div className="w-2/3 p-6 bg-blue-100 overflow-auto">
             <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
             <div className="border border-gray-300 rounded-2xl p-6 bg-white">
                 {(!executeClicked || selectedIds.length === 0) ? (
